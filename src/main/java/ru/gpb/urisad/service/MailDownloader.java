@@ -22,7 +22,8 @@ public class MailDownloader {
     private boolean isFileContractCorrect;
 
     public void extract(MailParserProperties properties) {
-        final String targetStrings = properties.getTargetStrings();
+        final String targetStrings = properties.getTargetStrings()
+                .substring(properties.getPrefixFieldsToTrim().length());
         final String filteredStrings = properties.getFilteredStrings();
 
         try {

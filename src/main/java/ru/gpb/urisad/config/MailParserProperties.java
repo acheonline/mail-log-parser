@@ -15,4 +15,5 @@ public class MailParserProperties {
     private String filteredStrings;
     private String targetStrings;
     private String splitChar;
+    private String prefixFieldsToTrim;
 }
